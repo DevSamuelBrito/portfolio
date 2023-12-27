@@ -11,6 +11,9 @@ body {
   height: 100vh;
 }
 
+.flex-top {
+  display: flex;
+}
 .flex {
   display: flex;
 }
@@ -75,10 +78,11 @@ header ul li {
 }
 
 section .top-of-site {
-    padding: 2vw 4%;
+  padding: 2vw 4%;
 }
 
-section .flex {
+section .flex,
+.flex-top {
   align-items: center;
   justify-content: center;
   gap: 3vw;
@@ -119,7 +123,7 @@ section .specialty {
   padding: 2vw 4%;
 }
 
-.specialty{
+.specialty {
   margin-bottom: 5vw;
 }
 
@@ -130,6 +134,9 @@ section .specialty {
 }
 .specialty .titulo span {
   color: blue;
+}
+.specialty .flex {
+  justify-content: space-between;
 }
 
 .specialty .specialty-box {
@@ -147,11 +154,11 @@ section .specialty {
 }
 .specialty .specialty-box i {
   color: blue;
-  font-size: 3.5vw;
+  font-size: 3vw;
 }
 
 .specialty .specialty-box h3 {
-  margin: 0.6vw 0 0.6vw 0;
+  margin: 0.6vw 0;
   font-size: 1.7vw;
   font-weight: 600;
 }
@@ -167,7 +174,7 @@ section .specialty {
   margin-bottom: 2vw;
 }
 
-.txt-port{
+.txt-port {
   margin-top: 3vw;
   color: white;
   font-size: 1.6vw;
@@ -182,8 +189,6 @@ section .Portifolio .flex {
   justify-content: space-around;
   margin-top: 2vw;
 }
-
-
 
 .img-port {
   width: 30vw;
@@ -238,7 +243,7 @@ footer .flex {
   justify-content: space-between;
 }
 
-.btn-social a button i{
+.btn-social a button i {
   color: black;
 }
 
@@ -254,7 +259,7 @@ footer .flex {
   transition: 0.2s;
 }
 
-.title-footer{
+.title-footer {
   color: white;
   font-size: 1.3vw;
 }
@@ -265,16 +270,127 @@ footer .flex {
 }
 
 .line-footer-borda {
-  border-top: 0.4vw solid blue;
+  border-top: 0.2vw solid blue;
 }
-
-footer .line-footer{
+.line-footer-borda a {
+  color: white;
+  text-decoration: none;
+}
+footer .line-footer {
   padding: 1vw 0;
 }
 
-
-
-footer .line-footer p a{
+footer .line-footer p a {
   text-decoration: none;
   color: white;
+}
+
+@media screen and (max-width: 1020px) {
+  .specialty,
+  .flex {
+    flex-direction: column;
+  }
+
+  .Portifolio,
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex-top {
+    flex-direction: column-reverse;
+  }
+
+  .navbar_content,
+  .btn-contact {
+    display: none;
+  }
+
+  .title {
+    font-size: 4vw;
+  }
+
+  section .top-of-site {
+    padding: 1vw 8%;
+  }
+  .top-of-site h1 {
+    font-size: 5vw;
+    padding-bottom: 1vw;
+  }
+
+  .top-of-site p {
+    font-size: 2.5vw;
+  }
+
+  section .flex,
+  .flex-top {
+    gap: 2vw;
+  }
+
+  .img-top-site img {
+    width: 100%;
+  }
+
+  .titulo {
+    font-size: 5vw;
+  }
+
+  section .specialty {
+    padding: 1vw 8%;
+  }
+
+  .specialty .titulo {
+    font-size: 5vw;
+  }
+  .specialty .specialty-box {
+    text-align: center;
+  }
+
+  .specialty .specialty-box i {
+    font-size: 8vw;
+  }
+  .specialty .specialty-box h3 {
+    font-size: 3.5vw;
+  }
+  .specialty .specialty-box p {
+    font-size: 3vw;
+  }
+  section .Portifolio {
+    padding: 1vw 8%;
+  }
+
+  .img-port {
+    display: none;
+  }
+
+  .txt-port {
+    font-size: 3vw;
+  }
+
+  .title-footer {
+    font-size: 2.7vw;
+  }
+
+  .btn-social button {
+    width: 4vw;
+    height: 4vw;
+  }
+  .btn-social i {
+    font-size: 2.5vw;
+  }
+
+  .line-footer-borda i{
+    font-size: 3vw;
+  }
+  .line-footer-borda a{
+    font-size: 2.6vw;
+    text-decoration: none;
+  }
+  footer .flex{
+    flex-direction: column;
+    gap: 1vw;
+  }
+
+  footer .line-footer-borda, .line-footer{
+    text-align: center;
+  }
 }
