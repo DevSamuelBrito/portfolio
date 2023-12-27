@@ -102,7 +102,7 @@ section .flex,
 .txt-top-site p {
   color: white;
   margin: 2vw 0;
-  font-size: 1.2vw;
+  font-size: 1.45vw;
 }
 
 .img-top-site img {
@@ -181,6 +181,14 @@ section .specialty {
   text-align: center;
 }
 
+.txt-oculto{
+  display: none;
+  margin-top: 3vw;
+  color: white;
+  font-size: 1.6vw;
+  text-align: center;
+}
+
 span {
   color: blue;
 }
@@ -191,6 +199,7 @@ section .Portifolio .flex {
 }
 
 .img-port {
+  margin-top: 1vw;
   width: 30vw;
   height: 40vh;
   background-color: blue;
@@ -363,6 +372,12 @@ footer .line-footer p a {
   }
 
   .txt-port {
+    font-size: 3vw;
+    display: none;
+  }
+
+  .txt-oculto{
+    display: block;
     font-size: 3vw;
   }
 
