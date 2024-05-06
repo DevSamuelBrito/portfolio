@@ -106,8 +106,9 @@ section .flex,
 }
 
 .img-top-site img {
+  width: 20vw;
   position: relative;
-  animation: flutuar 2s ease-in-out infinite alternate;
+  animation: flutuar 3s ease-in-out infinite alternate;
 }
 
 @keyframes flutuar {
@@ -335,8 +336,13 @@ footer .line-footer p a {
     gap: 2vw;
   }
 
+  .img-top-site{
+    text-align: center;
+    padding-bottom: 10vh;
+  }
+
   .img-top-site img {
-    width: 100%;
+    width: 50%;
   }
 
   .titulo {
